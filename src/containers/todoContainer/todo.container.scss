@@ -1,0 +1,14 @@
+.todo-main-container{
+    display: flex;
+    flex-direction: column;
+    .add-todo{
+        border: 1px solid violet;
+        
+    }
+    .todo-list{
+        border: 1px solid green;
+        .single-todo{
+            border: 1px solid blue;
+        }
+    }
+}

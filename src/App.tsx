@@ -1,12 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import { Provider } from 'react-redux';
+import { BrowserRouter, Routes } from "react-router-dom";
 import './App.css';
-import { AddTodo } from "./components/addTodo";
+import AppRoutes from './routes';
+import { store } from './store/store';
 function App() {
   return (
-    <div className="App">
-      <AddTodo></AddTodo>
-    </div>
+    <Provider store={store}>
+      <div className="App">
+      <BrowserRouter>
+      <Routes>
+        {AppRoutes}
+      </Routes>
+      </BrowserRouter>
+      </div>
+    </Provider>
+   
   );
 }
 
