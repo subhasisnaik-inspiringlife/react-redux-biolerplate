@@ -1,0 +1,27 @@
+/*
+What does it do?
+
+Preserves useful defaults, unlike many CSS resets which "unstyles" everything.
+Normalizes styles for a wide range of elements.
+Corrects bugs and common browser inconsistencies.
+Improves usability with subtle modifications.
+*/
+@import "./colors.scss";
+@import "./variables.scss";
+@import "./grid.scss";
+@import "./responsive-desktop.scss";
+@import "./responsive-smartphone.scss";
+@import "./responsive-tablet.scss";
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
